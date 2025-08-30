@@ -8,7 +8,7 @@ function Hero() {
         <h1 className='text-2xl lg:text-5xl font-bold text-white text-right leading-15'>
           Hi, Welcome<br />
           to my . portfolio <br />
-          Anagha Nisakar
+          <span className="typing-text text-secondary text-shadow-sm text-shadow-accent">Anagha Nisakar</span>
         </h1>
         <h3 className='text-xl lg:text-2xl font-semibold text-white text-right'>
           Frontend Developer

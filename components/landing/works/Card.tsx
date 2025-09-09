@@ -21,7 +21,6 @@ interface CardProps {
     type: string
     brief: string
     roles: roleType[]
-    content: content[]
     link: string
 }
 
@@ -32,7 +31,6 @@ function Card({
     type,
     brief,
     roles,
-    content,
     link,
     language,
 }: CardProps) {

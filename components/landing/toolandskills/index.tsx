@@ -1,6 +1,5 @@
-import React from 'react'
+import { TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import Card from './Card'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
 function ToolAndSkills() {
 

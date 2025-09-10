@@ -1,7 +1,6 @@
 import Hero from "@/components/landing/Hero";
 import ToolAndSkills from "@/components/landing/toolandskills";
 import Works from "@/components/landing/works";
-import Image from "next/image";
 
 export default function Home() {
   return (

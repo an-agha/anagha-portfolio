@@ -1,12 +1,6 @@
 import { Icon } from "@iconify/react"
-import { Languages } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import React from "react"
-
-interface content {
-    point: string
-}
 
 interface roleType {
     name: string,
@@ -67,7 +61,7 @@ function Card({
                     <p className="text-sm text-white text-justify">{brief}</p>
                     {
                         roles.map((role, index) => (
-                            <div className="flex flex-col gap-3">
+                            <div key={index} className="flex flex-col gap-3">
                                 <span className="text-secondary font-semibold text-base">{role.name}</span>
                                 <ul className="flex flex-col gap-2">
                                     {role.content.map((item, roleIndex) => (

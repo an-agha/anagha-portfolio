@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className='max-container min-h-screen px-10 py-20 flex flex-col lg:flex-row gap-10 lg:gap-20 lg:justify-items lg:items-center'>
       <div className='w-full flex flex-col lg:w-1/2 gap-4 lg:gap-6'>
-        <h1 className='text-2xl lg:text-5xl font-bold text-white text-right leading-15'>
+        <h1 className='text-3xl lg:text-5xl font-bold text-white text-right leading-10 lg:leading-15'>
           Hi, Welcome<br />
           to my . portfolio <br />
           <span className="typing-text text-secondary text-shadow-sm text-shadow-accent">Anagha Nisakar</span>
@@ -19,7 +19,7 @@ function Hero() {
       </div>
       <div className='w-1 h-full max-h-[60vh] bg-white hidden lg:block' />
         <Image 
-        src="/images/hero.png"
+        src="/images/anaghanisakar.png"
         width={600}
         height={800}
         alt="anagha nisakar profile image"

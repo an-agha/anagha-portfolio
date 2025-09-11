@@ -4,7 +4,7 @@ import Works from "@/components/landing/works";
 
 export default function Home() {
   return (
-    <main className="main-container h-screen bg-background">
+    <main className="max-w-screen min-h-screen bg-background">
       <Hero />
       <ToolAndSkills />
       <Works />

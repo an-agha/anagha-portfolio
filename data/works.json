@@ -1,0 +1,118 @@
+[
+  {
+    "image": "/images/works/nomik-legal.png",
+    "alt": "Nomik Legal website",
+    "name": "Nomik Legal",
+    "language": "React js, Next js, Tailwind css",
+    "type": "Website",
+    "brief": "I was responsible for front-end development and SEO optimization of the Nomik Legal website, built using React.js, Next.js, and Node.js.",
+    "roles": [
+      {
+        "name": "Frontend Development",
+        "content": [
+          "Built responsive, user-friendly pages using React.js and Next.js.",
+          "Implemented reusable components for consistent design and faster development.",
+          "Ensured cross-browser compatibility and smooth animations for better UX."
+        ]
+      },
+      {
+        "name": "SEO Development",
+        "content": [
+          "Added structured metadata, OpenGraph, and Twitter cards for improved social sharing.",
+          "Implemented canonical URLs, multi-language alternates, and robots directives.",
+          "Integrated Google Ads and Google Analytics tracking to measure traffic and ad performance.",
+          "Optimized page structure and performance for better search engine ranking."
+        ]
+      }
+    ],
+    "link": "https://nomiklegal.com/"
+  },
+  {
+    "image": "/images/works/eza.png",
+    "alt": "Eza Corporate Service Provider",
+    "name": "Eza Corporate",
+    "language": "Vue js, Nuxt Js, Tailwind css",
+    "type": "Website",
+    "brief": "A modern corporate business website fully designed and developed by us using Vue.js and Nuxt.js. We crafted a clean, professional design with responsive layouts, smooth animations, and engaging UI elements. Leveraging Nuxt’s SSR/SSG features, the site delivers fast performance, strong SEO, and a scalable, modular codebase.",
+    "roles": [
+      {
+        "name": "UI/UX Design",
+        "content": [
+          "Designed a clean and professional corporate-style interface.",
+          "Created responsive layouts ensuring seamless experience across mobile, tablet, and desktop.",
+          "Focused on user-friendly navigation and visual hierarchy to improve usability."
+        ]
+      },
+      {
+        "name": "Frontend Development",
+        "content": [
+          "Built the website using Vue.js and Nuxt.js, leveraging component-based architecture.",
+          "Implemented file-based routing, interactive sliders, and smooth animations.",
+          "Ensured modular, scalable, and maintainable code structure.",
+          "Optimized page structure and performance for better search engine ranking."
+        ]
+      },
+      {
+        "name": "SEO Development",
+        "content": [
+          "Utilized Nuxt SSR/SSG for better indexing and search visibility.",
+          "Optimized images, metadata, and site speed for Lighthouse SEO scores.",
+          "Applied clean semantic HTML for accessibility and SEO best practices."
+        ]
+      }
+    ],
+    "link": "https://ezacorporate.com/"
+  },
+  {
+    "image": "/images/works/ci-tech.png",
+    "alt": "Ci Tech",
+    "name": "CI Tech",
+    "language": "React js, Next Js, Tailwind css",
+    "type": "Website",
+    "brief": "A responsive web application built with React.js, featuring a W3 Forms integration for secure and user-friendly form submissions. Focused on clean UI, smooth UX, and reliable performance across devices.",
+    "roles": [
+      {
+        "name": "Frontend Development",
+        "content": [
+          "Built a responsive React.js application with clean and modular components.",
+          "Implemented interactive form handling using W3 Forms for reliable submissions and validation.",
+          "Ensured cross-browser compatibility and smooth performance across devices."
+        ]
+      }
+    ],
+    "link": "https://citech.my/"
+  },
+  {
+    "image": "/images/works/alam-engaz.png",
+    "alt": "Alam Engaz",
+    "name": "Alam Engaz",
+    "language": "Vue js, Nuxt Js, Tailwind css",
+    "type": "Website",
+    "brief": "A modern corporate site built with Vue.js and Nuxt.js, fully designed in Figma and developed with a focus on responsive UI, smooth UX, and SEO optimization for better performance and visibility.",
+    "roles": [
+      {
+        "name": "UI/UX Design",
+        "content": [
+          "Crafted high-fidelity mockups and interactive prototypes using Figma, aligning the visual identity with brand values for logistics and warehousing services.",
+          "Structured clean, intuitive layouts ensuring ease of use for all visitors—especially on mobile and tablet devices."
+        ]
+      },
+        {
+        "name": "Frontend Development",
+        "content": [
+          "Built the site using Vue.js and Nuxt.js, leveraging SSR/SSG to deliver robust performance and fast initial load times.",
+          "Created reusable components (service cards, navigation, hero sections, contact forms) to maintain design consistency and development efficiency.",
+          "Ensured responsiveness, cross-browser compatibility, and polished UI interactions (animations/transitions) to elevate user experience."
+        ]
+      },
+        {
+        "name": "SEO Optimization",
+        "content": [
+          "Integrated SEO best practices using Nuxt features such as <head> meta tags, dynamic metadata per page, optimized images, and canonical URLs.",
+          "Supported discoverability through structured content, possibly including sitemap/robots.txt setup and proper schema or OpenGraph tags."
+        ]
+      }
+    ],
+    "link": "https://alamengaz.com/"
+  }
+]

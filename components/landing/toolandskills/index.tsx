@@ -59,7 +59,7 @@ function ToolAndSkills() {
     ]
 
     return (
-        <section className='relative main-container w-full h-screen flex flex-col'>
+        <section className='relative main-container w-full  flex flex-col px-10 md:px-0'>
             <div className='w-auto max-container max-w-min px-10 lg:px-[100px]'>
                 <h2 className='text-white text-3xl lg:text-4xl font-medium'>
                     TOOLS & SKILLS

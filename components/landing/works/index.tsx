@@ -24,10 +24,18 @@ function index() {
                   roles={item.roles}
                   link={item.link}
                   key={index}
-                  language={item.language}
+                  languages={item.languages}
                 />
               ))
             }
+          </div>
+          <div className='w-full flex flex-col items-center pt-10'>
+            <h3 className='text-xl lg:text-2xl text-white'>
+              Figma Designs
+            </h3>
+            <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+                
+            </div>
           </div>
         </div>
       </div>

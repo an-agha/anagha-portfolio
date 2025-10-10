@@ -88,7 +88,7 @@ export function TimelineDemo() {
             content: (
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-2">
-                        <h3 className="text-lg text-white font-geologica text-white">
+                        <h3 className="text-lg text-white font-geologica">
                         Optimist Tech Hub, Kozhikode
                     </h3>
                     <span className="text-white/60 text-md  font-geologica">

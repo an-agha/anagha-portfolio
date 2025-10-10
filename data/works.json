@@ -3,7 +3,7 @@
     "image": "/images/works/nomik-legal.png",
     "alt": "Nomik Legal website",
     "name": "Nomik Legal",
-    "language": "React js, Next js, Tailwind css",
+    "languages": ["React js", "Next js", "Tailwind css"],
     "type": "Website",
     "brief": "I was responsible for front-end development and SEO optimization of the Nomik Legal website, built using React.js, Next.js, and Node.js.",
     "roles": [
@@ -19,7 +19,7 @@
         "name": "SEO Development",
         "content": [
           "Added structured metadata, OpenGraph, and Twitter cards for improved social sharing.",
-          "Implemented canonical URLs, multi-language alternates, and robots directives.",
+          "Implemented canonical URLs, multi-languages alternates, and robots directives.",
           "Integrated Google Ads and Google Analytics tracking to measure traffic and ad performance.",
           "Optimized page structure and performance for better search engine ranking."
         ]
@@ -31,9 +31,9 @@
     "image": "/images/works/eza.png",
     "alt": "Eza Corporate Service Provider",
     "name": "Eza Corporate",
-    "language": "Vue js, Nuxt Js, Tailwind css",
+    "languages": ["Vue js", "Nuxt Js", "Tailwind css"],
     "type": "Website",
-    "brief": "A modern corporate business website fully designed and developed by us using Vue.js and Nuxt.js. We crafted a clean, professional design with responsive layouts, smooth animations, and engaging UI elements. Leveraging Nuxt’s SSR/SSG features, the site delivers fast performance, strong SEO, and a scalable, modular codebase.",
+    "brief": "A modern corporate website built with Vue.js and Nuxt.js, featuring a clean design, responsive layout, smooth animations, and strong SEO.",
     "roles": [
       {
         "name": "UI/UX Design",
@@ -67,7 +67,7 @@
     "image": "/images/works/ci-tech.png",
     "alt": "Ci Tech",
     "name": "CI Tech",
-    "language": "React js, Next Js, Tailwind css",
+    "languages": ["React js", "Next Js", "Tailwind css"],
     "type": "Website",
     "brief": "A responsive web application built with React.js, featuring a W3 Forms integration for secure and user-friendly form submissions. Focused on clean UI, smooth UX, and reliable performance across devices.",
     "roles": [
@@ -86,7 +86,7 @@
     "image": "/images/works/alam-engaz.png",
     "alt": "Alam Engaz",
     "name": "Alam Engaz",
-    "language": "Vue js, Nuxt Js, Tailwind css",
+    "languages": ["Vue js", "Nuxt Js", "Tailwind css"],
     "type": "Website",
     "brief": "A modern corporate site built with Vue.js and Nuxt.js, fully designed in Figma and developed with a focus on responsive UI, smooth UX, and SEO optimization for better performance and visibility.",
     "roles": [
@@ -97,7 +97,7 @@
           "Structured clean, intuitive layouts ensuring ease of use for all visitors—especially on mobile and tablet devices."
         ]
       },
-        {
+      {
         "name": "Frontend Development",
         "content": [
           "Built the site using Vue.js and Nuxt.js, leveraging SSR/SSG to deliver robust performance and fast initial load times.",
@@ -105,7 +105,7 @@
           "Ensured responsiveness, cross-browser compatibility, and polished UI interactions (animations/transitions) to elevate user experience."
         ]
       },
-        {
+      {
         "name": "SEO Optimization",
         "content": [
           "Integrated SEO best practices using Nuxt features such as <head> meta tags, dynamic metadata per page, optimized images, and canonical URLs.",

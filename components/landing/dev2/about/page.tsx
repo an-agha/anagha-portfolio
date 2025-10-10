@@ -2,7 +2,6 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import Image from 'next/image'
 import React from 'react'
 import Chip from './Chip'
-import { link } from 'fs'
 
 function About() {
 
@@ -82,7 +81,7 @@ function About() {
     ]
 
     return (
-        <section className='main-container bg-darkBackground'>
+        <section id="about" className='main-container bg-darkBackground'>
             <div className='w-[90%] flex flex-col gap-15 max-w-[850px] bg-[#111723] border border-borderDark rounded-sm p-8'>
                 <div className='flex flex-col gap-3'>
                     <div className='flex items-center gap-3'>
@@ -116,7 +115,7 @@ function About() {
                     <div className='w-full flex flex-col gap-4 p-2'>
                         {
                             skills.map((skill, index) => (
-                                <div className='w-full flex flex-col gap-4 border border-borderDark p-4 rounded-md bg-[#1d2839]'>
+                                <div className='w-full flex flex-col gap-4 border border-borderDark p-4 rounded-md bg-[#1d2839]' key={index}>
                                     <h3 className='text-xl text-accent/70 font-light font-geologica'>
                                         {skill.title}
                                     </h3>

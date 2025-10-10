@@ -118,10 +118,14 @@
 }
 
 @layer base {
+  html {
+  scroll-behavior: smooth;
+}
   * {
     @apply border-border outline-ring/50;
     box-sizing: border-box;
     overflow-x: hidden;
+    box-sizing: border-box
   }
   body {
     @apply bg-background text-foreground;
@@ -163,6 +167,10 @@
   border: 1px solid #009959;
   box-shadow: 0 0 5px #98CD0020, 0 0 10px #00dc8244;
   border-radius: 10px;
+}
+
+a {
+  cursor: pointer;
 }
 
 

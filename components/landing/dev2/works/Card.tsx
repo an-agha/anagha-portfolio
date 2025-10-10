@@ -39,7 +39,7 @@ function Card({ image, alt, link, name, languages, type, brief }: CardProps) {
                     languages.map((item,index) => (
                         <Link href={link || ""}
                          key={index} 
-                            className="bg-[#2d3f5a]/60 flex gap-1.5 items-center text-[13px] font-light font-geologica px-3.5 py-1 rounded-lg text-white/60 border border-[#2c4263] shadow-lg hover:text-accent"
+                            className="bg-[#2d3f5a]/60 flex gap-1.5 items-center text-[13px] font-light font-geologica px-3.5 py-1 rounded-md text-white/60 border border-[#2c4263] shadow-lg hover:text-accent"
                         >
                             {item}
                         </Link>
@@ -47,11 +47,11 @@ function Card({ image, alt, link, name, languages, type, brief }: CardProps) {
                 }
             </div>
             <div className='w-full flex gap-3 flex-wrap'>
-                <Link href={link} target='blank' className='w-auto flex items-center gap-1 h-8 px-4 rounded-md bg-accent font-geologica font-medium text-sm'>
+                <Link href={link} target='blank' className='w-auto flex items-center gap-1 h-8 px-4 rounded-md bg-accent font-geologica font-medium text-sm border border-accent hover:bg-accent/60'>
                     <Icon icon="octicon:link-external-16" />
                     Live Demo
                 </Link>
-                <Link href={link} target='blank' className='w-auto flex items-center gap-1 h-8 px-4 rounded-md bg-darkBackground font-geologica font-light text-sm text-white/70'>
+                <Link href={link} target='blank' className='w-auto flex items-center gap-1 h-8 px-4 rounded-md border border-darkBackground bg-darkBackground font-geologica font-light text-sm text-white/70 hover:border-accent/40'>
                     <Icon icon="mdi:github" />
                     Source Code
                 </Link>

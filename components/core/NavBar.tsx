@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import Link from 'next/link'
 import React from 'react'
+import PrimaryButton from '@/components/core/button/Primary'
 
 function NavBar() {
     return (
@@ -19,9 +20,7 @@ function NavBar() {
                     <Icon icon="solar:call-chat-outline" className='text-2xl text-white/50' />
                 </Link>
             </div>
-            <button className='text-sm text-black font-medium bg-accent h-full px-6  rounded-md'>
-                Hire Me
-            </button>
+            <PrimaryButton link="#contact" content='Hire Me' className="h-9" />
         </nav>
     )
 }

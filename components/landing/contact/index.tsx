@@ -1,10 +1,11 @@
+import PrimaryButton from '@/components/core/button/Primary'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import Link from 'next/link'
 import React from 'react'
 
 function index() {
     return (
-        <section id="#contact" className='main-container py-10'>
+        <section id="contact" className='main-container py-10'>
             <div className='max-container flex flex-col items-center gap-4 border-t border-secondary/40 py-20'>
                 <h2 className='text-2xl lg:text-3xl text-white'>
                     Connect With Me
@@ -17,6 +18,7 @@ function index() {
                     <Icon icon="mdi-light:phone" className='text-secondary' />
                     +91 9072144202
                 </Link>
+                <PrimaryButton download content='Download My Resume' icon="material-symbols:download" link="/images/files/AnaghaNisakar.pdf" />
                 <div className='flex items-center gap-4 text-accent/50'>
                     - - - - 
                     <Link href="" className='text-accent text-xl'>

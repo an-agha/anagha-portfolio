@@ -1,3 +1,4 @@
+import PrimaryButton from '@/components/core/button/Primary'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -48,14 +49,15 @@ function Hero() {
                         <span className='text-sm md:text-md text-center text-white/60'>
                             Converting curious into code
                         </span>
+                        <PrimaryButton download content='Download My Resume' icon="material-symbols:download" link="/images/files/AnaghaNisakar.pdf" />
                     </div>
                     <div className='flex gap-3'>
                         {
                             socailmedia.map((item,index) => (
                                 <Link href={item.link} 
                                 key={index}
-                                className='w-10 h-10 rounded-md bg-[#1d2839] border-[0.5] border-borderDark flex flex-col items-center justify-center'>
-                                    <Icon icon={item.icon} className='text-accent/50 text-xl' />
+                                className='w-10 h-10 rounded-md bg-[#1d2839] hover:bg-linear-to-r from-backgroundDark via-accent/15 to-backgroundDark border-[0.5] border-borderDark flex flex-col items-center justify-center hover:border-accent/40 group'>
+                                    <Icon icon={item.icon} className='text-accent/50 text-xl group-hover:text-accent' />
                                 </Link>
                             ))
                         }

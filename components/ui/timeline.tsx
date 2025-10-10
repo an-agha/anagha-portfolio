@@ -45,6 +45,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           I&apos;ve been working on Aceternity for the past 3 years. Here&apos;s
           a timeline of my journey.
         </p>
+        
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-10">

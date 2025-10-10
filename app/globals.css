@@ -5,6 +5,8 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-darkBackground: var(--darkBackground);
+  --color-borderDark: var(--borderDark);
   --secondary: oklch(0.547 0.319 296.32);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -47,6 +49,8 @@
 :root {
   --radius: 0.625rem;
   --background: #041726;
+  --darkBackground : #060a13;
+  --borderDark: #222f44;
   --foreground: oklch(0.13 0.028 261.692);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.13 0.028 261.692);
@@ -58,7 +62,7 @@
   --secondary-foreground: oklch(0.21 0.034 264.665);
   --muted: oklch(0.967 0.003 264.542);
   --muted-foreground: oklch(0.551 0.027 264.364);
-  --accent: #06C1F3;
+  --accent: #00dc82;
   --accent-foreground: oklch(0.21 0.034 264.665);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.928 0.006 264.531);
@@ -123,7 +127,11 @@
     @apply bg-background text-foreground;
     font-family: "JetBrains Mono" , sans-serif ;
 
+    
   }
+  .font-geologica{
+  font-family: 'Geologica', sans-serif !important;
+}
 }
 
 .main-container {
@@ -145,6 +153,19 @@
     border-right: 2px solid white;
     animation: typing 3s steps(20, end), blink 0.7s step-end infinite;
   }
+
+  .gradient-text {
+  background: linear-gradient(90deg, #06C1F3, #98CD0090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.glow-box {
+  border: 1px solid #009959;
+  box-shadow: 0 0 5px #98CD0020, 0 0 10px #00dc8244;
+  border-radius: 10px;
+}
+
+
 
   @keyframes typing {
     from { width: 0 }

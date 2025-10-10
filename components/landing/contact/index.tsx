@@ -1,11 +1,10 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
-import { section } from 'motion/react-client'
 import Link from 'next/link'
 import React from 'react'
 
 function index() {
     return (
-        <section className='main-container py-10'>
+        <section id="#contact" className='main-container py-10'>
             <div className='max-container flex flex-col items-center gap-4 border-t border-secondary/40 py-20'>
                 <h2 className='text-2xl lg:text-3xl text-white'>
                     Connect With Me

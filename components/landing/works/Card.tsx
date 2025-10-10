@@ -12,7 +12,7 @@ interface CardProps {
     image: string
     alt: string
     name: string
-    language: string
+    languages: string[]
     type: string
     brief: string
     roles: roleType[]
@@ -27,7 +27,7 @@ function Card({
     brief,
     roles,
     link,
-    language,
+    languages,
 }: CardProps) {
     return (
         <div className="relative w-full p-[2px] bg-linear-to-r from-secondary to-accent rounded-md">
@@ -58,7 +58,7 @@ function Card({
                                     <span className="font-light">
                                         Language :
                                     </span>
-                                    {language}
+                                    {languages}
                                 </div>
                             </div>
                             <div className="flex gap-1 items-center border border-accent/80 text-xs text-secondary px-3 py-1 rounded-sm font-bold">

@@ -1,9 +1,8 @@
 
 import Hero from "@/components/landing/dev2/Hero";
+import About from "@/components/landing/dev2/about/page";
 import Experience from "@/components/landing/dev2/experience";
 import Works from "@/components/landing/dev2/works";
-import About from "@/components/landing/dev2/about/page";
-import Contact from "@/components/landing/dev2/contact";
 
 export default function Home() {
   return (

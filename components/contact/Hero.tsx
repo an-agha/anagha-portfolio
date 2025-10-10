@@ -16,7 +16,7 @@ function Hero() {
                         Get In Touch
                     </h1>
                     <span className='text-white/70 font-geologica'>
-                        Let's discuss your next project or just say hello
+                        Let&apos;s discuss your next project or just say hello
                     </span>
                 </div>
                 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-5 pt-5'>

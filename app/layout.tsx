@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono, Manrope,Geologica } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/core/NavBar";
+import Contact from '@/components/landing/dev2/contact'
 
 const geistSans = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -34,8 +35,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${manrope?.variable} ${geologica.variable}  antialiased`}
       >
         <NavBar />
-        
         {children}
+        <section className=" border-t-1 border-b-1 border-dashed border-borderDark">
+                <Contact />
+            </section>
       </body>
     </html>
   );

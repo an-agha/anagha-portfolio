@@ -119,7 +119,7 @@ function About() {
                                     <h3 className='text-xl text-accent/70 font-light font-geologica'>
                                         {skill.title}
                                     </h3>
-                                    <div className='w-full flex gap-2'>
+                                    <div className='w-full flex gap-2 flex-wrap'>
                                         {
                                             skill.skill.map((item, index) => (
                                                 <Chip skill={item.name} link={item.link} key={index} />

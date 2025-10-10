@@ -28,8 +28,8 @@ function Hero() {
         <section className='main-container bg-darkBackground'>
             <div className="relative max-container  flex flex-col items-center justify-center">
                 <div className='w-[90%] flex flex-col items-center bg-[#111723] max-w-[850px] border border-borderDark text-geologica rounded-sm px-10 py-20 gap-15'>
-                    <div className='flex flex-col gap-4 items-center'>
-                        <span className='font-geologica text-white/50'>
+                    <div className='flex flex-col gap-2 md:gap-4 items-center'>
+                        <span className='font-geologica text-sm md:text-base text-white/50'>
                             WELCOME TO
                         </span>
                         <Image 
@@ -39,13 +39,13 @@ function Hero() {
                         className='w-20 h-20 rounded-full object-cover' 
                         alt="Anagha profile" 
                         />
-                        <h1 className='font-geologica text-4xl lg:text-6xl font-extrabold gradient-text'>
+                        <h1 className='font-geologica text-center text-[26px] md:text-4xl lg:text-6xl font-extrabold gradient-text'>
                             ANAGHA NISAKAR
                         </h1>
-                        <span className='text-xl text-white font-geologica font-medium'>
+                        <span className='text-lg md:text-xl text-center text-white font-geologica font-medium'>
                             Developer Portfolio
                         </span>
-                        <span className='text-md text-white/60'>
+                        <span className='text-sm md:text-md text-center text-white/60'>
                             Converting curious into code
                         </span>
                     </div>

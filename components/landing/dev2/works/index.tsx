@@ -31,7 +31,6 @@ function index() {
                             />
                         ))
                     }
-
                 </div>
             </div>
         </section>

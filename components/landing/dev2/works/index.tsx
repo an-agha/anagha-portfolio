@@ -1,11 +1,12 @@
 import React from 'react'
 import Card from './Card'
 import worksData from '@/data/works.json'
+import PrimaryButton from '@/components/core/button/Primary'
 
 function index() {
     return (
         <section id="works" className='main-container bg-darkBackground'>
-            <div className='w-[90%] flex flex-col gap-15 max-w-[850px] bg-[#111723] border border-borderDark rounded-sm p-8'>
+            <div className='w-[90%] flex flex-col items-center gap-15 max-w-[850px] bg-[#111723] border border-borderDark rounded-sm p-8'>
                 <div className='flex flex-col gap-3'>
                     <div className='flex items-center justify-center gap-3'>
                         <h2 className='text-2xl lg:text-5xl font-geologica font-bold text-center gradient-text'>
@@ -32,6 +33,12 @@ function index() {
                         ))
                     }
                 </div>
+                <PrimaryButton 
+                content='Explore More' 
+                icon="vaadin:angle-right" 
+                link="/projects"
+                className='max-w-60'
+                 />
             </div>
         </section>
     )

@@ -10,10 +10,11 @@ interface CardProps {
     type: string
     brief: string
     link: string
+    sourceCode?: string
     languages: string[]
 }
 
-function Card({ image, alt, link, name, languages, type, brief }: CardProps) {
+function Card({ image, alt, link, name, languages, type, brief, sourceCode }: CardProps) {
     return (
         <div className='relative w-full flex flex-col gap-3 bg-[#1d2839] border border-borderDark rounded-2xl shadow-2xl p-2'>
             <Image
@@ -51,7 +52,7 @@ function Card({ image, alt, link, name, languages, type, brief }: CardProps) {
                     <Icon icon="octicon:link-external-16" />
                     Live Demo
                 </Link>
-                <Link href={link} target='blank' className='w-auto flex items-center gap-1 h-8 px-4 rounded-md border border-darkBackground bg-darkBackground font-geologica font-light text-sm text-white/70 hover:border-accent/40'>
+                <Link href={sourceCode || ""} target='blank' className='w-auto flex items-center gap-1 h-8 px-4 rounded-md border border-darkBackground bg-darkBackground font-geologica font-light text-sm text-white/70 hover:border-accent/40'>
                     <Icon icon="mdi:github" />
                     Source Code
                 </Link>

@@ -25,7 +25,9 @@
         ]
       }
     ],
-    "link": "https://nomiklegal.com/"
+    "link": "https://nomiklegal.com/",
+    "sourceCode": "https://github.com/an-agha/nomic-legal-websitebnn"
+
   },
   {
     "image": "/images/works/eza.png",
@@ -61,7 +63,8 @@
         ]
       }
     ],
-    "link": "https://ezacorporate.com/"
+    "link": "https://ezacorporate.com/",
+    "sourceCode": "https://github.com/knight-developers/eza"
   },
   {
     "image": "/images/works/ci-tech.png",
@@ -80,7 +83,8 @@
         ]
       }
     ],
-    "link": "https://citech.my/"
+    "link": "https://citech.my/",
+     "sourceCode": "https://github.com/SuyogPP/ci-tech-web"
   },
   {
     "image": "/images/works/alam-engaz.png",
@@ -113,6 +117,41 @@
         ]
       }
     ],
-    "link": "https://alamengaz.com/"
+    "link": "https://alamengaz.com/",
+    "sourceCode": "https://github.com/knight-developers/alam-engaz"
+  },
+  {
+    "image": "/images/works/vfx-artist-portfolio.png",
+    "alt": "VFX Atrist Portfolio",
+    "name": "VFX Atrist Portfolio",
+    "languages": ["Vue js", "Nuxt Js", "Tailwind css"],
+    "type": "Website",
+    "brief": "Personal portfolio website built using Vue, Nuxt, and Tailwind CSS with a focus on speed, SEO, and responsive design.",
+    "roles": [
+      {
+        "name": "UI/UX Design",
+        "content": [
+          "Crafted high-fidelity mockups and interactive prototypes using Figma, aligning the visual identity with brand values for logistics and warehousing services.",
+          "Structured clean, intuitive layouts ensuring ease of use for all visitors—especially on mobile and tablet devices."
+        ]
+      },
+      {
+        "name": "Frontend Development",
+        "content": [
+          "Built the site using Vue.js and Nuxt.js, leveraging SSR/SSG to deliver robust performance and fast initial load times.",
+          "Created reusable components (service cards, navigation, hero sections, contact forms) to maintain design consistency and development efficiency.",
+          "Ensured responsiveness, cross-browser compatibility, and polished UI interactions (animations/transitions) to elevate user experience."
+        ]
+      },
+      {
+        "name": "SEO Optimization",
+        "content": [
+          "Integrated SEO best practices using Nuxt features such as <head> meta tags, dynamic metadata per page, optimized images, and canonical URLs.",
+          "Supported discoverability through structured content, possibly including sitemap/robots.txt setup and proper schema or OpenGraph tags."
+        ]
+      }
+    ],
+    "link": "https://adharshsanthosh.netlify.app/",
+    "sourceCode": "https://github.com/an-agha/Adharsh-portfolio"
   }
 ]

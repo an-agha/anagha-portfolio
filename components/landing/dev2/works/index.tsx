@@ -19,7 +19,7 @@ function index() {
                 </div>
                 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4'>
                     {
-                        worksData?.map((item, index) => (
+                        worksData?.slice(0,4)?.map((item, index) => (
                             <Card
                                 image={item.image}
                                 alt={item.alt}
@@ -29,6 +29,7 @@ function index() {
                                 brief={item.brief}
                                 key={index}
                                 languages={item.languages}
+                                sourceCode={item.sourceCode}
                             />
                         ))
                     }

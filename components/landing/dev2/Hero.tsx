@@ -20,7 +20,7 @@ function Hero() {
             icon: 'material-symbols:mail-outline',
         },
         {
-            link: '',
+            link: 'https://github.com/an-agha/anagha-portfolio',
             icon: 'icon-park-outline:code',
         },
     ]
@@ -56,6 +56,7 @@ function Hero() {
                             socailmedia.map((item,index) => (
                                 <Link href={item.link} 
                                 key={index}
+                                target='blank'
                                 className='w-10 h-10 rounded-md bg-[#1d2839] hover:bg-linear-to-r from-backgroundDark via-accent/15 to-backgroundDark border-[0.5] border-borderDark flex flex-col items-center justify-center hover:border-accent/40 group'>
                                     <Icon icon={item.icon} className='text-accent/50 text-xl group-hover:text-accent' />
                                 </Link>

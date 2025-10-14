@@ -121,6 +121,14 @@
   html {
   scroll-behavior: smooth;
 }
+/* html, body {
+  cursor: url('/cursor.svg') 8 8, url('/cursor.png') 8 8, auto !important;
+} */
+html, body {
+  cursor: url('/cursor.svg') 8 8, auto;
+}
+
+
   * {
     @apply border-border outline-ring/50;
     box-sizing: border-box;

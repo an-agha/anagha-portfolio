@@ -52,7 +52,9 @@ function NavBar() {
                 />
                 {
                     navItems.map((item,index) => (
-                        <Link href={item.path} className='relative text-white/80 text-sm font-light group overflow-visible'>
+                        <Link href={item.path} className='relative text-white/80 text-sm font-light group overflow-visible'
+                        key={index}
+                        >
                             <Icon icon={item.icon} 
                             className={cn('text-2xl text-white/70 hover:text-accent', {"text-accent":path === item.path})}
                             key={index}

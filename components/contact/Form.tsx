@@ -34,30 +34,26 @@ function FormX() {
 
   console.log(form.formState.errors)
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log("forms", values);
-    await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({...values, access_key: process.env.NEXT_PUBLIC_WEB3_KEY}, null, 2),
-    })
-      .then(async (response) => {
-        const json = await response.json();
-        if (json.success) {
-          setFormMessage(json.message);
-          form.reset();
-        } else {
-          setFormMessage(json.message);
-        }
-      })
-      .catch((error) => {
-        setFormMessage(error.response.body as string);
-        console.log(error);
+ async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
       });
-    console.log(values)
+
+      const data = await response.json();
+
+      if (data.success) {
+        setFormMessage("Message sent successfully!");
+        form.reset();
+      } else {
+        setFormMessage(data.message || "Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      setFormMessage("Failed to send message. Please try again later.");
+    }
   }
 
   return (

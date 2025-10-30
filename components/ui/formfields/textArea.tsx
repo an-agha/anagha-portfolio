@@ -25,7 +25,7 @@ const RHFInput: React.FC<InputProps> = ({ name,label, desc, placeholder, classNa
                     <FormItem>
                         <FormLabel>{label}</FormLabel>
                         <FormControl>
-                            <Textarea className={`p-7 w-full text-white/60 rounded-md bg-darkBackground/40 border-[#2e405b]/50 ${className}`} placeholder={placeholder} {...field} />
+                            <Textarea className={`py-7 px-4 w-full text-white/60 rounded-md bg-darkBackground/40 border-[#2e405b]/50 ${className}`} placeholder={placeholder} {...field} />
                         </FormControl>
                         {
                             desc &&

@@ -36,10 +36,10 @@ function FormX() {
 
  async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
+        body: JSON.stringify({access_key: process.env.NEXT_PUBLIC_WEB3_KEY, ...values}),
       });
 
       const data = await response.json();

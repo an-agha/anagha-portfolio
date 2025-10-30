@@ -19,6 +19,7 @@ export async function POST(req: Request) {
       const data = await response.json();
       return NextResponse.json(data);
   } else {
-     return NextResponse.json({ success: false, message: "Failed to submit form" }, { status: 500 });
+      const data = await response.json();
+     return NextResponse.json(data, { status: 500 });
   }
 }

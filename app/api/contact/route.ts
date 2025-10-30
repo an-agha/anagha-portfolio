@@ -10,8 +10,8 @@ export async function POST(req: Request) {
       Accept: "application/json",
     },
     body: JSON.stringify({
-      ...body,
       access_key: process.env.NEXT_PUBLIC_WEB3_KEY,
+      ...body,
     }),
   });
 

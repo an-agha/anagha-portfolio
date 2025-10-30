@@ -1,37 +1,67 @@
 'use client'
 
-import React from 'react';
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
 import {
   Form
-} from "@/components/ui/form"
+} from "@/components/ui/form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from 'react';
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 import BaseInput from '@/components/ui/formfields/input';
 import BaseTextarea from '@/components/ui/formfields/textArea';
-import PrimaryButton from '@/components/core/button/Primary'
 
 const formSchema = z.object({
-  username: z.string().min(2).max(50),
+  fullname: z.string().min(2).max(50),
+  email: z.email().min(2).max(50),
+  phonenumber: z.string().min(10).max(12),
+  description: z.string().min(2).max(150),
 })
 
 function FormX() {
 
+  const [formMessage, setFormMessage] = useState<string>("")
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      fullname: "",
+      email: "",
+      phonenumber: "",
+      description: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+  console.log(form.formState.errors)
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log("forms", values);
+    await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({...values, access_key: process.env.NEXT_PUBLIC_WEB3_KEY}, null, 2),
+    })
+      .then(async (response) => {
+        const json = await response.json();
+        if (json.success) {
+          setFormMessage(json.message);
+          form.reset();
+        } else {
+          setFormMessage(json.message);
+        }
+      })
+      .catch((error) => {
+        setFormMessage(error.response.body as string);
+        console.log(error);
+      });
     console.log(values)
   }
 
   return (
+    <>
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <div className='w-full flex flex-col gap-4 bg-[rgb(29,40,57)] border border-borderDark rounded-lg p-4'>
@@ -44,11 +74,20 @@ function FormX() {
             <BaseInput name="phonenumber" placeholder='Phone Number' />
             <BaseTextarea name="description" placeholder='Description' />
           </div>
-          <PrimaryButton 
-          content='Submit' />
+          <button type='submit'
+        className={`text-accent/90 gap-2 border border-accent/60 px-4 py-2 rounded-lg font-geologica flex items-center justify-center glow-box hover:text-accent hover:bg-linear-to-r from-backgroundDark via-accent/30 to-backgroundDark`}
+          >
+            Submit
+          </button>
         </div>
       </form>
     </Form>
+    <div>
+      <div>
+        {formMessage}
+      </div>
+    </div>
+    </>
   )
 }
 

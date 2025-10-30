@@ -52,7 +52,7 @@ function NavBar() {
                 />
                 {
                     navItems.map((item,index) => (
-                        <Link href={item.path} className='relative text-white/80 text-sm font-light group overflow-visible'
+                        <Link href={item.path} className='relative hidden md:flex text-white/80 text-sm font-light group overflow-visible'
                         key={index}
                         >
                             <Icon icon={item.icon} 
@@ -66,7 +66,7 @@ function NavBar() {
                     ))
                 }
             </div>
-            <PrimaryButton link="#contact" content='Hire Me' className="h-9" />
+            <PrimaryButton link="#contact" content='Hire Me' className="flex h-9" />
         </nav>
     )
 }

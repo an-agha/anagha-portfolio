@@ -1,7 +1,10 @@
 import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
-  const body = await req.json();
+  let body = await req.json();
+  body.access_key = process.env.NEXT_PUBLIC_WEB3_KEY;
+
+  console.log("Received contact form submission:", body);
 
   const response = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -9,12 +12,13 @@ export async function POST(req: Request) {
       "Content-Type": "application/json",
       Accept: "application/json",
     },
-    body: JSON.stringify({
-      access_key: process.env.NEXT_PUBLIC_WEB3_KEY,
-      ...body,
-    }),
+    body: JSON.stringify(body),
   });
-
-  const data = await response.json();
-  return NextResponse.json(data);
+  
+  if(response?.ok) {
+      const data = await response.json();
+      return NextResponse.json(data);
+  } else {
+     return NextResponse.json({ success: false, message: "Failed to submit form" }, { status: 500 });
+  }
 }

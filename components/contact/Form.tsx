@@ -32,8 +32,6 @@ function FormX() {
     },
   });
 
-  console.log(form.formState.errors)
-
  async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const response = await fetch("/api/contact", {
@@ -51,7 +49,6 @@ function FormX() {
         setFormMessage(data.message || "Something went wrong.");
       }
     } catch (error) {
-      console.error(error);
       setFormMessage("Failed to send message. Please try again later.");
     }
   }

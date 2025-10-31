@@ -32,7 +32,7 @@ function FormX() {
     },
   });
 
-  console.log(form.formState.errors)
+  // console.log(form.formState.errors)
 
  async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
@@ -51,7 +51,7 @@ function FormX() {
         setFormMessage(data.message || "Something went wrong.");
       }
     } catch (error) {
-      console.error(error);
+      // console.error(error);
       setFormMessage("Failed to send message. Please try again later.");
     }
   }

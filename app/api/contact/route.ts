@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server';
 import { web3formsKey } from './constants';
 
 export async function POST(req: Request) {
-  let body = await req.json();
+  const  body = await req.json();
 
-  body.access_key = process.env.NEXT_PUBLIC_WEB3_KEY || web3formsKey;
+  const Finalbody = {...body, access_key: process.env.NEXT_PUBLIC_WEB3_KEY || web3formsKey};
 
   console.log("Received contact form submission:", body);
 
@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       "Content-Type": "application/json",
       Accept: "application/json",
     },
-    body: JSON.stringify(body),
+    body: JSON.stringify(Finalbody),
   });
   
   if(response?.ok) {

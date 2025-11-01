@@ -25,6 +25,8 @@ function About() {
                 { name: 'Vue', link: 'https://vuejs.org/'  },
                 { name: 'Nuxt', link: 'https://nuxt.com/'  },
                 { name: 'Tailwind CSS', link: 'https://tailwindcss.com/'  },
+                { name: 'SCSS', link: 'https://sass-lang.com/'  },
+                { name: 'Markdown', link: 'https://www.markdownguide.org/'  },
             ]
         },
         {
@@ -80,6 +82,12 @@ function About() {
         },
     ]
 
+    const about = [
+        'I am a passionate Frontend Developer with over 3.6 years of professional experience in building modern, responsive, and user-focused web applications. My expertise spans across React.js, Vue.js, and Nuxt.js, with a strong focus on clean UI development and optimized performance.',
+        'I take pride in transforming complex requirements into intuitive, visually appealing digital experiences. Along with my proficiency in frontend engineering, I also specialize in developer-side SEO and performance optimization, ensuring that every project I deliver is both user-friendly and search-friendly.',
+        'Throughout my career, I’ve collaborated closely with designers, backend engineers, and project managers to bring seamless, high-quality products to life. Whether working independently or as part of a team, I’m driven by the goal of creating meaningful web experiences that connect technology with people.'
+    ]
+
     return (
         <section id="about" className='main-container bg-darkBackground'>
             <div className='w-[90%] flex flex-col gap-15 max-w-[850px] bg-[#111723] border border-borderDark rounded-sm p-8'>
@@ -96,9 +104,15 @@ function About() {
                             About
                         </h2>
                     </div>
-                    <p className='text-white/70 font-light font-geologica'>
-                        A Frontend Developer is responsible for building engaging, responsive, and user-friendly interfaces for web applications. They work closely with designers and backend developers to translate design mockups and functional requirements into efficient, interactive, and visually appealing web experiences.
-                    </p>
+                    <div className='flex flex-col gap-3'>
+                        {
+                            about.map((item, index) => (
+                                <p key={index} className='text-white/70 font-light font-geologica'>
+                                    {item}
+                                </p>
+                            ))
+                        }
+                    </div>
                 </div>
                 <div className='w-full flex flex-col gap-4'>
                     <div className='flex items-center gap-3'>

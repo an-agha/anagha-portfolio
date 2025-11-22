@@ -6,7 +6,7 @@ import Works from "@/components/landing/dev2/works";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Anagha Nisakar | Frontend Developer',
+  title: 'Anagha Nisakar | Frontend Developer | React,Next,Vue & Nuxt',
   description: 'Frontend Developer skilled in Vue, Nuxt, React, and Next.js, building fast, responsive, user-focused interfaces with clean code and modern rich UI experience.',
 };
 

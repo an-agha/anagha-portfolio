@@ -29,7 +29,7 @@ const geologica = Geologica({
 export const metadata: Metadata = {
   metadataBase: new URL(defaultUrl),
   openGraph: {
-    title: 'Anagha Nisakar | Frontend Developer',
+    title: 'Anagha Nisakar | Frontend Developer | React,Next,Vue & Nuxt',
     description: 'Frontend Developer skilled in Vue, Nuxt, React, and Next.js, building fast, responsive, user-focused interfaces with clean code and modern rich UI experience.',
     type: "website",
     siteName: 'Anagha Nisakar\'s Developer Portfolio',

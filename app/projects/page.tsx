@@ -1,5 +1,12 @@
 import Hero from '@/components/projects/Hero'
+import { Metadata } from 'next';
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Projects | Anagha Nisakar – Frontend Developer",
+  description:
+    "Explore projects by Anagha Nisakar, a Frontend Developer skilled in Vue, Nuxt, React, and Next.js. Showcasing responsive, user-focused, and high-performance web applications.",
+};
 
 function page() {
     return (

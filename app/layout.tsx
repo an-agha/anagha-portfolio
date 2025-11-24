@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Manrope,Geologica } from "next/font/google";
+import { JetBrains_Mono, Manrope, Geologica } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/core/NavBar";
 import Contact from '@/components/landing/dev2/contact'
@@ -77,9 +77,10 @@ export const metadata: Metadata = {
   other: {
     'script[type="application/ld+json"]': JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Frontend Developer Portfolio",
-      "@id": "https://anagha-nisakar-portfolio.vercel.app/#frontenddeveloper",
+      "@type": "Person",
+      "@id": "https://anagha-nisakar-portfolio.vercel.app/#anaghanisakar",
       "name": "Anagha Nisakar",
+      "jobTitle": "Frontend Developer",
       "image": "https://anagha-nisakar-portfolio.vercel.app/profile-photo.png",
       "url": "https://anagha-nisakar-portfolio.vercel.app/",
       "telephone": "+91 9072144202",
@@ -90,8 +91,22 @@ export const metadata: Metadata = {
         "addressRegion": "KL",
         "postalCode": "673614",
         "addressCountry": "IN"
-      }
-    }),
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/anagha-nisakar",
+        "https://github.com/Anagha-Nisakar"
+      ],
+      "skills": [
+        "React.js",
+        "Next.js",
+        "Vue.js",
+        "Nuxt.js",
+        "Tailwind CSS",
+        "JavaScript",
+        "UI/UX",
+        "Responsive Web Development"
+      ]
+    })
   },
 };
 
@@ -109,8 +124,8 @@ export default function RootLayout({
         <NavBar />
         {children}
         <section className=" border-t-1 border-b-1 border-dashed border-borderDark">
-                <Contact />
-            </section>
+          <Contact />
+        </section>
       </body>
     </html>
   );

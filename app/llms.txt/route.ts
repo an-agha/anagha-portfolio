@@ -1,4 +1,3 @@
-// app/llms.txt/route.ts
 import { NextResponse } from "next/server";
 
 export const GET = () => {

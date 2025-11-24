@@ -74,40 +74,40 @@ export const metadata: Metadata = {
     },
   ],
   category: 'Frontend Developer Portfolio, Web Developer Portfolio, Software Developer Portfolio, UI/UX & Frontend Portfolio, JavaScript Developer Portfolio, React Developer Portfolio, Next.js Developer Portfolio, Vue.js Developer Portfolio, Nuxt.js Developer Portfolio, Tailwind CSS Developer Portfolio, IT & Software Development, Web Design & Development, Technology / Personal Portfolio, Creative Developer Portfolio',
-  other: {
-    'script[type="application/ld+json"]': JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "@id": "https://anagha-nisakar-portfolio.vercel.app/#anaghanisakar",
-      "name": "Anagha Nisakar",
-      "jobTitle": "Frontend Developer",
-      "image": "https://anagha-nisakar-portfolio.vercel.app/profile-photo.png",
-      "url": "https://anagha-nisakar-portfolio.vercel.app/",
-      "telephone": "+91 9072144202",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Lakshmi Nivas, Kootalida, Avidanallur",
-        "addressLocality": "Kozhikode",
-        "addressRegion": "KL",
-        "postalCode": "673614",
-        "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/anagha-nisakar",
-        "https://github.com/Anagha-Nisakar"
-      ],
-      "skills": [
-        "React.js",
-        "Next.js",
-        "Vue.js",
-        "Nuxt.js",
-        "Tailwind CSS",
-        "JavaScript",
-        "UI/UX",
-        "Responsive Web Development"
-      ]
-    })
-  },
+  // other: {
+  //   'script[type="application/ld+json"]': JSON.stringify({
+  //     "@context": "https://schema.org",
+  //     "@type": "Person",
+  //     "@id": "https://anagha-nisakar-portfolio.vercel.app/#anaghanisakar",
+  //     "name": "Anagha Nisakar",
+  //     "jobTitle": "Frontend Developer",
+  //     "image": "https://anagha-nisakar-portfolio.vercel.app/profile-photo.png",
+  //     "url": "https://anagha-nisakar-portfolio.vercel.app/",
+  //     "telephone": "+91 9072144202",
+  //     "address": {
+  //       "@type": "PostalAddress",
+  //       "streetAddress": "Lakshmi Nivas, Kootalida, Avidanallur",
+  //       "addressLocality": "Kozhikode",
+  //       "addressRegion": "KL",
+  //       "postalCode": "673614",
+  //       "addressCountry": "IN"
+  //     },
+  //     "sameAs": [
+  //       "https://www.linkedin.com/in/anagha-nisakar",
+  //       "https://github.com/Anagha-Nisakar"
+  //     ],
+  //     "skills": [
+  //       "React.js",
+  //       "Next.js",
+  //       "Vue.js",
+  //       "Nuxt.js",
+  //       "Tailwind CSS",
+  //       "JavaScript",
+  //       "UI/UX",
+  //       "Responsive Web Development"
+  //     ]
+  //   })
+  // },
 };
 
 
@@ -118,6 +118,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Anagha Nisakar",
+              "url": "https://anagha-nisakar-portfolio.vercel.app/",
+              "jobTitle": "Frontend Developer",
+              "image": "https://anagha-nisakar-portfolio.vercel.app/anaghanisakar-logo.png",
+              "description": "Frontend Developer skilled in Vue, Nuxt, React, and Next.js.",
+              "sameAs": [
+                "https://www.linkedin.com/in/anagha-nisakar/",
+                "https://github.com/anagha-nisakar"
+              ]
+            })
+          }}
+        />
+
+        {/* Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Anagha Nisakar",
+              "url": "https://anagha-nisakar-portfolio.vercel.app/",
+              "logo": "https://anagha-nisakar-portfolio.vercel.app/anaghanisakar-logo.png"
+            })
+          }}
+        />
+      </head>
+
       <body
         className={`${geistSans.variable} ${manrope?.variable} ${geologica.variable}  antialiased`}
       >

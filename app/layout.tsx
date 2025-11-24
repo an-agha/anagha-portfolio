@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     canonical: defaultUrl,
     languages: {
       "en-US": `${defaultUrl}/`,             // English - default
-      "fr": `${defaultUrl}/fr`,              // French
-      "es": `${defaultUrl}/es`,              // Spanish
-      "x-default": `${defaultUrl}/`,         // Fallback default
+      // "fr": `${defaultUrl}/fr`,              // French
+      // "es": `${defaultUrl}/es`,              // Spanish
+      // "x-default": `${defaultUrl}/`,         // Fallback default
     },
   },
   authors: [

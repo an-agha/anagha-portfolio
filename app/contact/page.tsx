@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact | Anagha Nisakar – Frontend Developer",
   description:
-    "Get in touch with Anagha Nisakar, a Frontend Developer skilled in Vue, Nuxt, React, and Next.js. Reach out for collaboration, projects, or frontend development inquiries.",
+    "Get in touch with Anagha Nisakar, a Frontend Developer experienced in React, Vue, Nuxt, and Next.js. Open to collaborations, freelance work, and new opportunities.",
 };
 
 function page() {

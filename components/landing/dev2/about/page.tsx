@@ -60,6 +60,18 @@ function About() {
                     name: 'Motion Dev',
                     link: 'https://motion.dev/',
                  },
+                 { 
+                    name: 'Bitbucket',
+                    link: 'https://bitbucket.org/product/',
+                 },
+                  { 
+                    name: 'Jira',
+                    link: 'https://www.atlassian.com/software/jira',
+                 },
+                  { 
+                    name: 'GSAP',
+                    link: 'https://gsap.com/',
+                 },
             ]
         },
         {

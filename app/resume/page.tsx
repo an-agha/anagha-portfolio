@@ -8,7 +8,6 @@ function page() {
         className="w-full h-full border-none"
         title="My Resume"
       />
-hhh
     </div>
   )
 }

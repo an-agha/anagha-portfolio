@@ -49,7 +49,10 @@ function Hero() {
                         <span className='text-sm md:text-md text-center text-white/60'>
                             Converting curious into code
                         </span>
-                        <PrimaryButton download content='Download My Resume' icon="material-symbols:download" link="/images/files/AnaghaNisakar.pdf" />
+                        <div className='flex gap-4'>
+                            <PrimaryButton download content='Download My Resume' icon="material-symbols:download" link="/images/files/AnaghaNisakar.pdf" />
+                         <PrimaryButton content='View Resume' icon="iconoven:resume" link="/resume" />
+                        </div>
                     </div>
                     <div className='flex gap-3'>
                         {
